@@ -1,0 +1,19 @@
+{
+	"networks": {
+		"emulator": "127.0.0.1:3569"
+	},
+	"accounts": {
+		"backend-account": {
+			"address": "179b6b1cb6755e31",
+			"key": "d335a199fc11c6d444eb55b10291c0c12e5f520dfc373dcfe4f6a6b94e50e793"
+		},
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": "6834b45706a42d884c8e1bc1b40e8f8c53c5e8c1e6b8c5d8e0f8e8f8e8f8e8f8"
+		},
+		"user-account": {
+			"address": "f3fcd2c1a78f5eee",
+			"key": "817b4812cc9c0c1a347d113cdb9dc7f93819f014f0ba36c4055537c67e936532"
+		}
+	}
+}

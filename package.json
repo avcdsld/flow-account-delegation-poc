@@ -1,0 +1,7 @@
+{
+  "name": "flow-capability-delegation-poc",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "bash test.sh"
+  }
+}
