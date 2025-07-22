@@ -29,7 +29,7 @@ Flowブロックチェーンにおけるカストディウォレットから&Acc
 ├── flow.json                 # Flow CLI設定
 ├── test.sh                   # テスト実行スクリプト
 ├── contracts/
-│   └── ExampleNFT.cdc                          # NFTコントラクト
+│   └── ExampleNFT.cdc                          # NFTコントラクト(https://github.com/onflow/flow-nft/blob/master/contracts/ExampleNFT.cdc)
 ├── scripts/
 │   └── check_nft_ownership.cdc                 # NFT所有権確認
 ├── transactions/
