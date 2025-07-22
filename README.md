@@ -28,9 +28,19 @@ Flowブロックチェーンにおけるカストディウォレットから&Acc
 ├── package.json              # プロジェクト設定とスクリプト
 ├── flow.json                 # Flow CLI設定
 ├── test.sh                   # テスト実行スクリプト
+├── contracts/
+│   └── ExampleNFT.cdc                          # NFTコントラクト
+├── scripts/
+│   └── check_nft_ownership.cdc                 # NFT所有権確認
 ├── transactions/
-│   ├── backend_publish_capability.cdc   # バックエンド: capability公開
-│   └── user_claim_capability.cdc        # ユーザー: capability取得
+│   ├── backend_publish_capability.cdc          # バックエンド: capability公開
+│   ├── backend_publish_limited_capability.cdc  # バックエンド: 制限付きcapability公開
+│   ├── create_collection.cdc                   # NFTコレクション作成
+│   ├── mint.cdc                                # NFTミント
+│   ├── parent_move_nft_from_child.cdc          # 親: 子アカウントからNFT移動
+│   ├── parent_move_nft_from_child_limited.cdc  # 親: 制限付きcapabilityでNFT移動
+│   ├── user_claim_capability.cdc               # ユーザー: capability取得
+│   └── user_claim_limited_capability.cdc       # ユーザー: 制限付きcapability取得
 └── README.md
 ```
 
