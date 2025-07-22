@@ -11,6 +11,13 @@
 
 Flowブロックチェーンにおけるカストディウォレットから&Accountのcapabilityを移譲するPOC。
 
+1. `flow transactions send transactions/create_collection.cdc --network=emulator --signer user-account`
+2. `flow transactions send transactions/create_collection.cdc --network=emulator --signer backend-account`
+3. `flow transactions send transactions/mint.cdc --network=emulator --signer emulator-account <backend-account-address>`
+4. `flow scripts execute scripts/check_nft_ownership.cdc --network=emulator <user-account-address> <backend-account-address>`
+5. `flow transactions send transactions/parent_move_nft_from_child.cdc --network=emulator --signer user-account <nft-id>`
+6. `flow scripts execute scripts/check_nft_ownership.cdc --network=emulator <user-account-address> <backend-account-address>`
+
 ## 概要
 
 このプロジェクトは、バックエンドが管理するカストディウォレットから、ユーザーのセルフカストディウォレットに対してアカウント制御権限を移譲する仕組みを実装しています。
