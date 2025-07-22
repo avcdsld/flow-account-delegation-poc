@@ -11,6 +11,8 @@
 
 Flowブロックチェーンにおけるカストディウォレットから&Accountのcapabilityを移譲するPOC。
 
+NFTを移動させるテスト
+
 1. `flow transactions send transactions/create_collection.cdc --network=emulator --signer user-account`
 2. `flow transactions send transactions/create_collection.cdc --network=emulator --signer backend-account`
 3. `flow transactions send transactions/mint.cdc --network=emulator --signer emulator-account <backend-account-address>`
